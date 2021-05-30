@@ -1,0 +1,153 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+:root{
+--bg-color4:#00CF5E;
+--bg-color5:#0003cf; 
+--bg-color6:#3814bb; 
+--bg-color7:#bf5bee; 
+--bg-color8:#e62d2d; 
+}
+
+@keyframes animacion{
+  0%{
+    stroke:var(--bg-color5);
+    margin-top: -40em;
+    margin-left: 50px;
+  }
+
+  25%{
+    stroke:var(--bg-color6) ;
+    margin-top: 5em;
+    margin-left: 60em;
+  }
+
+  50%{
+    stroke:var(--bg-color7) ;
+    margin-top:5em;
+    margin-left: 20em;
+  }
+
+  75%{
+    stroke:var(--bg-color8) ;
+    margin-top: -20em;
+    margin-left: 50px;
+  }
+  100%{
+    stroke:var(--bg-color4) ;
+    margin-top: -40em;
+    margin-left: 50px;
+  }
+}
+
+@keyframes animacion2{
+  0%{
+    stroke:var(--bg-color6);
+    margin-top: -40em;
+    margin-left: 70em;
+  }
+
+  25%{
+    stroke:var(--bg-color7) ;
+    margin-top: 7em;
+    margin-left: 50px;
+  }
+
+  50%{
+    stroke:var(--bg-color8) ;
+    margin-top:5em;
+    margin-left: 20em;
+  }
+
+  75%{
+    stroke:var(--bg-color4) ;
+    margin-top: -60em;
+    margin-left:70em;
+  }
+  100%{
+    stroke:var(--bg-color5) ;
+    margin-top: -40em;
+    margin-left: 70em;
+  }
+}
+
+@keyframes animacion3{
+  0%{
+    stroke:var(--bg-color7);
+    margin-top: 4em;
+    margin-left: 70em;
+  }
+
+  25%{
+    stroke:var(--bg-color8) ;
+    margin-top: 2em;
+    margin-left: 50px;
+  }
+
+  50%{
+    stroke:var(--bg-color4) ;
+    margin-top:5em;
+    margin-left: 50px;
+  }
+
+  75%{
+    stroke:var(--bg-color5) ;
+    margin-top: 1em;
+    margin-left:20em;
+  }
+
+  100%{
+    stroke:var(--bg-color6);
+    margin-top: 4em;
+    margin-left: 70em;
+  }
+}
+
+@keyframes animacion4{
+  0%{
+    stroke:var(--bg-color8);
+    margin-top: 4em;
+    margin-left: 50px;
+  }
+
+  25%{
+    stroke:var(--bg-color4) ;
+    margin-top: 2em;
+    margin-left: 15em;
+  }
+
+  50%{
+    stroke:var(--bg-color5) ;
+    margin-top:-10em;
+    margin-left: 50px;
+  }
+
+  75%{
+    stroke:var(--bg-color6) ;
+    margin-top: -20em;
+    margin-left:2em;
+  }
+
+  100%{
+    stroke:var(--bg-color7);
+    margin-top: 4em;
+    margin-left: 50px;
+  }
+}
+
+.circle{
+  animation: animacion 10s linear infinite;
+}
+
+.circle2{
+  animation: animacion2 15s linear infinite;
+}
+
+.circle3{
+  animation: animacion3 10s linear infinite;
+}
+
+.circle4{
+  animation: animacion4 15s linear infinite;
+}

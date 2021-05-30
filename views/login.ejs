@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/login.css">
+
+  <title>SaludNet</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="fotos/logo.png" class="logo">
+      <p>ACCEDER</p>
+    </header>
+
+    <main id="main">
+      <div class="email">
+        <section>
+          <form method="POST" action="/user" class="from">
+            <input class="user" type="text" autocomplete="off" name="user" placeholder="Ingresa tu correo electronico">
+            <div class="mensaje">
+              <%= mensaje %>
+            </div>
+            <p>¿no tienes una cuenta? entonces creala, para que disfrutes de esta gran app.</p>
+
+
+            <section class="inicio">
+              <form action="" method="GET">
+                <a href="/formulario" class="crear">Crear cuenta</a>
+              </form>
+
+              <button class="next" id="btnNext">Siguiente</button>
+            </section>
+          </form>
+
+        </section>
+
+      </div>
+
+      <!--password-->
+
+      <div class="password">
+        <section>
+          <form class="from" method="POST" action="/password">
+            <input class="user" name="password" type="text" autocomplete="off" placeholder="Ingresa tu contraseña">
+
+            <p>¿no tienes una cuenta? entonces creala, para que disfrutes de esta gran app.</p>
+
+
+            <section class="inicio2">
+              <button class="back" id="back" type="button">Atras</button>
+              <button class="next2" name="password" type="submit">Finalizar</button>
+            </section>
+          </form>
+        </section>
+
+      </div>
+
+  </div>
+  <script src="js/funciones.js"></script>
+</body>
+
+</html>
